@@ -7,6 +7,7 @@ import { themeConfig } from './config/theme';
 
 export default withMermaid(
   defineConfig({
+    base: '/xf-blog/', // GitHub Pages 部署路径
     lang: metaData.lang,
     title: metaData.title,
     description: metaData.description,
