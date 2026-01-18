@@ -1,0 +1,1 @@
+const t=JSON.parse('[{"title":"个人常用 Linux 命令","author":"箫风","date":"2019/12/31 21:00","isTop":true,"categories":["分类1"],"tags":["Linux"],"path":"categories/category1/2019/12/31/个人常用Linux命令"},{"title":"章节1","author":"箫风","date":"2020/10/02 21:29","categories":["小册1"],"tags":["Java","示例"],"path":"courses/course1/01-卷1/01-章节1"}]');export{t as d};
