@@ -26,6 +26,10 @@ jobs:
   # 任务1: 部署 GitHub Pages
   deploy-github-pages:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     steps:
       # 1、检出源码
       - name: Checkout
@@ -76,7 +80,7 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }} #Gitee私钥
         with:
-          source-repo: git@github.com:rockyflux/xf-blog.github.io.git #GitHub 源仓库地址
+          source-repo: git@github.com:rockyflux/xf-blog.git #GitHub 源仓库地址
           destination-repo: git@gitee.com:rockyflux/xf-blog.git #Gitee 目标仓库地址
       # 2、部署 Gitee Pages
       - name: Deploy Gitee Pages
