@@ -1,5 +1,3 @@
-[English](./README.en.md) | 中文
-
 # 箫风的知识库
 
 <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
@@ -15,69 +13,90 @@
 
 📝 **箫风的个人技术知识库，记录 & 分享个人碎片化、结构化、体系化的技术知识内容。** 
 
-🐢 [GitHub Pages（完整体验）](https://rockyflux.github.io/xf-blog) | 🐇 [Gitee Pages（无法评论）](https://rockyflux.gitee.io/xf-blog)
+🌐 [在线访问](https://rockyflux.github.io/xf-blog)
 
-## 开始
+## 快速开始
 
 ```bash
-# 1.克隆本仓库
+# 1. 克隆仓库
 git clone https://github.com/rockyflux/xf-blog.git
-# 2.安装 PNPM
+
+# 2. 安装 PNPM
 npm install pnpm -g
-# 3.设置淘宝镜像源
+
+# 3. 设置淘宝镜像源（可选，提升下载速度）
 pnpm config set registry https://registry.npmmirror.com/
-# 4.安装依赖
+
+# 4. 安装依赖
 pnpm install
-# 5.dev 运行，访问：http://localhost:5173
+
+# 5. 启动开发服务器，访问 http://localhost:5173
 pnpm dev
-# 6.打包，文件存放位置：docs/.vitepress/dist
-# 如果是部署到 GitHub Pages，可以利用 GitHub Actions，在 push 到 GitHub 后自动部署打包
-# 详情见：.github/workflows/deploy-pages.yml，根据个人需要删减工作流配置
+
+# 6. 构建生产版本，输出目录：docs/.vitepress/dist
 pnpm build
-# 7.部署
-# 7.1 push 到 GitHub 仓库，部署到 GitHub Pages：需要在仓库设置中启用 GitHub Pages（本仓库采用此种部署方式）
-# 7.2 在其他平台部署, 例如：Gitee Pages、Vercel、Netlify、个人虚拟主机、个人服务器等
 ```
 
-## 已扩展功能（持续优化细节）
+## 部署
 
-- [x] 拆分配置文件：解决“大”配置文件问题，提取公有配置选项进行复用，方便维护
+本项目使用 GitHub Actions 自动部署。当代码推送到 `main` 分支时，会自动构建并部署到 GitHub Pages。
 
-- [x] GitHub Actions：push 到 GitHub，自动进行项目打包及 GitHub Pages 部署，并同步到 Gitee Pages（可根据个人需要自行删减同步 Gitee Pages 部分工作流配置）
+### 首次部署
 
-- [x] 自动生成侧边栏：将文章按规律性目录存放后，侧边栏将自动生成，支持文章置顶🔝（在文章 frontmatter 中配置 `isTop: true`，即可在侧边栏自动出现置顶分组）
+1. **配置 GitHub Pages**
+   - 访问仓库设置：`https://github.com/rockyflux/xf-blog/settings/pages`
+   - **Source** 选择：`Deploy from a branch`
+   - **Branch** 选择：`pages`，路径选择 `/ (root)`
+   - 点击 **Save** 保存
 
-- [x] 主页美化：参照 vite 文档主页进行美化
+2. **推送代码触发部署**
+   ```bash
+   git push origin main
+   ```
+   推送后，GitHub Actions 会自动构建并推送到 `pages` 分支。
 
-- [x] 自定义页脚：支持ICP备案号、公安备案号、版权信息配置（符合大陆网站审核要求）
+3. **查看部署状态**
+   - 在仓库的 **Actions** 标签页查看部署进度
+   - 部署完成后，站点会在几分钟内生效
+   - 访问地址：`https://rockyflux.github.io/xf-blog/`
 
-- [x] 文章元数据信息显示：文章标题下显示是否原创、作者、发布时间、所属分类、标签列表等信息，可全局配置作者及作者主页信息
+### 注意事项
 
-  - [x] 已扩展文章阅读数信息，默认已启用，可在 docs/.vitepress/config/theme.ts 中 articleMetadataConfig 配置中关闭（开启需要自行提供并配置好 API 服务，目前来看搞起来还有点麻烦，不喜欢折腾的可以直接关闭或更换其他方式提供 API 服务，欢迎提建议）
+- 部署完成后可能需要几分钟时间才能访问
+- 如果仓库名不是 `username.github.io`，需要在 `docs/.vitepress/config.ts` 中配置 `base` 路径（本项目已配置为 `/xf-blog/`）
+- 部署失败时，请查看工作流日志排查问题
 
-- [x] 《我的标签》：模仿语雀标签页风格，另有标签云展示。语雀标签页地址：https://www.yuque.com/r/语雀用户名/tags?tag=
+## 功能特性
 
-- [x] 《我的归档》：自定义时间轴，展示历史文章数据。年份前可展示生肖，还可按分类、标签筛选
+- [x] **配置管理**：拆分配置文件，提取公共配置，便于维护
 
-- [x] 文章评论：目前仅支持Gitalk
+- [x] **自动部署**：GitHub Actions 自动构建并部署到 GitHub Pages（详见 [部署说明](#部署)）
 
-- [x] 版权声明：文末显示原创或转载文章的版权声明，可自由配置采用的版权协议
+- [x] **自动侧边栏**：按目录结构自动生成侧边栏，支持文章置顶🔝（在文章 frontmatter 中配置 `isTop: true`）
 
-- [x] ~~徽章：标题后可显示徽章，此功能来自于 VitePress 未合并的 PR，如若后续被合并，则改用官方主题功能（[官方已合并于 v1.0.0-alpha.27](https://github.com/vuejs/vitepress/issues/1239)）~~
+- [x] **主页美化**：参照 Vite 文档风格进行美化
 
-- [x] ~~本地文档搜索支持：VitePress 官方目前仅提供了对接 algolia 的在线搜索配置，而且对接起来的流程也较为麻烦。所幸寻到一个本地文档搜索插件 [emersonbottero/vitepress-plugin-search](https://github.com/emersonbottero/vitepress-plugin-search)。目前对接了 [vitepress-plugin-pagefind](https://www.npmjs.com/package/vitepress-plugin-pagefind) 本地搜索插件，中文搜索相对友好一些，如需体验，可将 `docs/vite.config.ts` 文件中的注释去除掉。目前 VitePress 官方有一个 PR 正在处理离线搜索功能，再过段时间应该就能合并了，到时候体验一下试试看。~~ 
+- [x] **自定义页脚**：支持 ICP 备案号、公安备案号、版权信息配置
 
-  ~~注意：本地文档搜索和 algolia 搜索无法同时使用，开启本地文档搜索后 algolia 搜索配置将不再生效。~~ 
+- [x] **文章元数据**：显示原创标识、作者、发布时间、分类、标签等信息，可全局配置作者信息
+  - [x] 支持文章阅读数统计（需自行配置 API 服务，可在 `docs/.vitepress/config/theme.ts` 中关闭）
 
-- [x] Mermaid 流程图：在 Markdown 中绘制流程图、状态图、时序图、甘特图、饼图等，更多语法请参见：[Mermaid 官方文档](https://github.com/mermaid-js/mermaid/blob/develop/README.zh-CN.md) 。（Typora 编辑器也支持 `mermaid` 语法）
+- [x] **标签系统**：模仿语雀标签页风格，支持标签云展示
 
-- [x] Markdown 脚注、Markdown 公式支持
+- [x] **文章归档**：自定义时间轴展示历史文章，支持按分类、标签筛选，年份前可显示生肖
 
-- [x] 更多细节优化：敬请发现
-  - [x] 文章内图片增加圆角样式优化
-  - [x] 浏览器滚动条样式优化（支持 Firfox、谷歌系浏览器）
-  - [x] 侧边栏分组中的文章列表增加序号显示
-  - [x] ......
+- [x] **文章评论**：集成 Gitalk 评论系统
+
+- [x] **版权声明**：文末自动显示原创或转载文章的版权声明，可自定义版权协议
+
+- [x] **Mermaid 流程图**：支持在 Markdown 中绘制流程图、状态图、时序图、甘特图、饼图等（[Mermaid 官方文档](https://github.com/mermaid-js/mermaid/blob/develop/README.zh-CN.md)）
+
+- [x] **Markdown 扩展**：支持脚注、数学公式
+
+- [x] **细节优化**
+  - [x] 文章内图片圆角样式
+  - [x] 浏览器滚动条样式优化（支持 Firefox、Chrome 等）
+  - [x] 侧边栏文章列表序号显示
 
 
 ## 部分页面截图
@@ -136,8 +155,8 @@ pnpm build
 - [mermaid-js/mermaid](https://github.com/mermaid-js/mermaid/blob/develop/README.zh-CN.md)
 - ......
 
-## License
+## 许可证
 
-- 文章遵循[ CC 4.0 BY-SA ](http://creativecommons.org/licenses/by-sa/4.0/)版权协议，转载请附上原文出处链接和声明
-- 源码遵循 [MIT](./LICENSE) 许可协议
-- Copyright © 2024 箫风
+- 文章遵循 [CC 4.0 BY-SA](http://creativecommons.org/licenses/by-sa/4.0/) 协议，转载请附上原文出处链接和声明
+- 源码遵循 [MIT](./LICENSE) 协议
+- Copyright © 2026 箫风

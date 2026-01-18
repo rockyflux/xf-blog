@@ -82,13 +82,13 @@ export const themeConfig: DefaultTheme.Config = {
   // 自定义扩展: 评论配置
   commentConfig: {
     type: 'gitalk',
-    showComment: true // 是否显示评论
+    showComment: false // 是否显示评论
   },
   // 自定义扩展: 页脚配置
   footerConfig: {
-    showFooter: true, // 是否显示页脚
+    showFooter: false, // 是否显示页脚
     icpRecordCode: '湘ICP备20012522号-2', // ICP备案号
     publicSecurityRecordCode: '湘ICP备20012522号-2', // 联网备案号
-    copyright: `Copyright © 2024-${new Date().getFullYear()} 箫风` // 版权信息
+    copyright: `Copyright © 2026-${new Date().getFullYear()} 箫风` // 版权信息
   }
 }
