@@ -49,7 +49,7 @@
     <!-- 时间轴主体 -->
     <div class="timeline-item" v-for="(item, year) in archiveData">
       <div class="year">
-        <img class="chinese-zodiac" @click="goToLink('/archives', 'year', year.replace('年', ''))" :src="'/img/svg/chinese-zodiac/' + getChineseZodiac(year.replace('年', '')) + '.svg'" :title="getChineseZodiacAlias(year.replace('年', ''))" alt="生肖">
+        <img class="chinese-zodiac" @click="goToLink('/archives', 'year', year.replace('年', ''))" :src="withBase('/img/svg/chinese-zodiac/' + getChineseZodiac(year.replace('年', '')) + '.svg')" :title="getChineseZodiacAlias(year.replace('年', ''))" alt="生肖">
         <span>{{ year }}</span>
       </div>
       <div class="timeline-item-content">
@@ -81,6 +81,7 @@
 <script lang="ts" setup>
   import { getQueryParam, goToLink, getChineseZodiac, getChineseZodiacAlias } from '../utils.ts';
   import { data as articleData } from '../../../../article.data.js';
+  import { withBase } from 'vitepress';
 
   // 文章原始数据和归档数据
   let $articleData;
