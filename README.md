@@ -35,6 +35,9 @@ pnpm dev
 
 # 6. 构建生产版本，输出目录：docs/.vitepress/dist
 pnpm build
+
+# 7. 索引文档到 Algolia（用于搜索功能）
+pnpm index:algolia
 ```
 
 ## 部署
@@ -92,6 +95,8 @@ pnpm build
 - [x] **Mermaid 流程图**：支持在 Markdown 中绘制流程图、状态图、时序图、甘特图、饼图等（[Mermaid 官方文档](https://github.com/mermaid-js/mermaid/blob/develop/README.zh-CN.md)）
 
 - [x] **Markdown 扩展**：支持脚注、数学公式
+
+- [x] **Algolia 搜索**：集成 Algolia DocSearch，支持全文搜索（运行 `pnpm index:algolia` 索引文档）
 
 - [x] **细节优化**
   - [x] 文章内图片圆角样式

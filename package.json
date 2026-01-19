@@ -8,12 +8,14 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "preview": "vitepress preview docs",
+    "index:algolia": "node scripts/index-algolia.js"
   },
   "devDependencies": {
     "@arco-design/web-vue": "2.57.0",
     "@types/blueimp-md5": "2.18.2",
     "@types/jquery": "3.5.29",
+    "algoliasearch": "^5.0.0",
     "markdown-it": "14.1.0",
     "markdown-it-footnote": "3.0.3",
     "markdown-it-mathjax3": "4.3.2",

@@ -48,22 +48,13 @@ export const themeConfig: DefaultTheme.Config = {
       icon: {
         svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>码云</title><path d="M11.984 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.016 0zm6.09 5.333c.328 0 .593.266.592.593v1.482a.594.594 0 0 1-.593.592H9.777c-.982 0-1.778.796-1.778 1.778v5.63c0 .327.266.592.593.592h5.63c.982 0 1.778-.796 1.778-1.778v-.296a.593.593 0 0 0-.592-.593h-4.15a.592.592 0 0 1-.592-.592v-1.482a.593.593 0 0 1 .593-.592h6.815c.327 0 .593.265.593.592v3.408a4 4 0 0 1-4 4H5.926a.593.593 0 0 1-.593-.593V9.778a4.444 4.444 0 0 1 4.445-4.444h8.296Z"/></svg>'
       },
-      link: 'https://gitee.com/rockyflux/xf-blog'
+      link: 'https://github.com/rockyflux/xf-blog'
     },
     {
       icon: {
-        svg: `<svg width="33" height="33" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.8 204">
-                <title>ContiNew Admin</title>
-                <path fill="#307AF2" d="M86.7,0l88,51v.2l-16.3,9.4v-.2L86.7,18.9Zm71.8,143.5,16.3,9.4v.2L86.8,204h0l-16.3-9.4,16.3-9.4h0l71.7-41.5v-.2Z"/>
-                <path fill="#12D2AC" d="M16.3,143.5v.2L58,167.8l-16.3,9.4L0,153.1v-.2Z"/>
-                <path fill="#12D2AC" d="M104.1,93,15.9,143.8l-.2-.1V124.9l.2.1L87.7,83.6,104.1,93Z"/>
-                <path fill="#0057FE" d="M88.1,0,.1,51v.2l16.3,9.4v-.2L88.1,18.9Z"/>
-                <path fill="#307AF2" d="M.1,50.9.2,152.6l.2.1,16.3-9.4-.2-.1-.1-82.9L.1,50.9Z"/>
-                <path fill="#0057FE" d="M174.7,50.9l-.1,101.7-.2.1-16.3-9.4.2-.1.1-82.9Z"/>
-                <path fill="#12D2AC" d="M41.7,158.5l16.1,9.4,100.6-58.7V90.4Z"/>
-              </svg>`
+        svg: `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="5" width="90" height="90" rx="15" ry="15" fill="#1E88E5" stroke="#0D47A1" stroke-width="2"/><path d="M30 40 L45 60 L60 40 M30 60 L45 40 L60 60" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M65 40 L65 70 Q65 75 60 75 L55 75" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="80" cy="80" r="5" fill="#FFFFFF" opacity="0.8"/></svg>`
       },
-      link: 'https://continew.top/'
+      link: 'https://getxf.cn/'
     }
   ],
 
@@ -86,9 +77,9 @@ export const themeConfig: DefaultTheme.Config = {
   },
   // 自定义扩展: 页脚配置
   footerConfig: {
-    showFooter: false, // 是否显示页脚
+    showFooter: true, // 是否显示页脚
     icpRecordCode: '湘ICP备20012522号-2', // ICP备案号
-    publicSecurityRecordCode: '湘ICP备20012522号-2', // 联网备案号
+    publicSecurityRecordCode: '', // 联网备案号
     copyright: `Copyright © 2026-${new Date().getFullYear()} 箫风` // 版权信息
   }
 }

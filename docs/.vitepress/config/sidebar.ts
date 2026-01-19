@@ -5,9 +5,48 @@ import { getChineseZodiac, getChineseZodiacAlias } from '../theme/utils.ts';
 const sync = fg.sync;
 
 export const sidebar: DefaultTheme.Config['sidebar'] = {
-  '/categories/category1/': getItemsByDate("categories/category1"),
+  // 开发工具
+  '/dev-tools/editor/': getItemsByDate("dev-tools/editor"),
+  '/dev-tools/version-control/': getItemsByDate("dev-tools/version-control"),
+  '/dev-tools/package-manager/': getItemsByDate("dev-tools/package-manager"),
+  '/dev-tools/build-tools/': getItemsByDate("dev-tools/build-tools"),
+  '/dev-tools/debug-tools/': getItemsByDate("dev-tools/debug-tools"),
+  '/dev-tools/testing-tools/': getItemsByDate("dev-tools/testing-tools"),
+  '/dev-tools/database-tools/': getItemsByDate("dev-tools/database-tools"),
+  '/dev-tools/api-tools/': getItemsByDate("dev-tools/api-tools"),
+  '/dev-tools/deployment-tools/': getItemsByDate("dev-tools/deployment-tools"),
+  '/dev-tools/performance-tools/': getItemsByDate("dev-tools/performance-tools"),
 
-  '/courses/course1/': getItems("courses/course1"),
+  // 开发教程
+  '/tutorials/frontend/': getItemsByDate("tutorials/frontend"),
+  '/tutorials/backend/': getItemsByDate("tutorials/backend"),
+  '/tutorials/mobile/': getItemsByDate("tutorials/mobile"),
+  '/tutorials/database/': getItemsByDate("tutorials/database"),
+  '/tutorials/devops/': getItemsByDate("tutorials/devops"),
+  '/tutorials/algorithm/': getItemsByDate("tutorials/algorithm"),
+
+  // AI相关
+  '/ai/tools/': getItemsByDate("ai/tools"),
+  '/ai/models/': getItemsByDate("ai/models"),
+  '/ai/applications/': getItemsByDate("ai/applications"),
+  '/ai/learning/': getItemsByDate("ai/learning"),
+
+  // 在线工具
+  '/online-tools/code/': getItemsByDate("online-tools/code"),
+  '/online-tools/design/': getItemsByDate("online-tools/design"),
+  '/online-tools/convert/': getItemsByDate("online-tools/convert"),
+  '/online-tools/productivity/': getItemsByDate("online-tools/productivity"),
+
+  // 折腾电脑
+  '/computer/system-optimization/': getItemsByDate("computer/system-optimization"),
+  '/computer/software/': getItemsByDate("computer/software"),
+  '/computer/hardware/': getItemsByDate("computer/hardware"),
+  '/computer/troubleshooting/': getItemsByDate("computer/troubleshooting"),
+
+  // 浏览器
+  '/browser/extensions/': getItemsByDate("browser/extensions"),
+  '/browser/tips/': getItemsByDate("browser/tips"),
+  '/browser/config/': getItemsByDate("browser/config"),
 }
 
 /**
@@ -89,10 +128,14 @@ function getItemsByDate (path: string) {
     });
 
     // 将最近年份分组展开
-    yearGroups[1].collapsed = false;
+    if (yearGroups.length > 1) {
+      yearGroups[1].collapsed = false;
+    }
   } else {
     // 将最近年份分组展开
-    yearGroups[0].collapsed = false;
+    if (yearGroups.length > 0) {
+      yearGroups[0].collapsed = false;
+    }
   }
 
   // 添加序号

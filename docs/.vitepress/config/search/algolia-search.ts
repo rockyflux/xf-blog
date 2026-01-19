@@ -1,9 +1,13 @@
 import type { AlgoliaSearchOptions } from 'vitepress';
 
 export const algoliaSearchOptions: AlgoliaSearchOptions = {
-  appId: 'DBZ0G9HBUY',
-  apiKey: '00cef480a543003d05d9808110ea5f65',
-  indexName: 'charles7c',
+  appId: 'JF17SJJSHZ',
+  apiKey: '258c86298fbcf35c9a1c69d1e4166207', // 搜索 API Key（只读，用于前端搜索）
+  indexName: 'xfblog',
+  // 搜索参数配置（注释掉，让 VitePress 自动处理）
+  // searchParameters: {
+  //   facetFilters: ['lang:zh-CN']
+  // },
   locales: {
     root: {
       placeholder: '搜索文档',

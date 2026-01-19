@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /categories/category1/index
+      link: /tutorials/
     - theme: alt
       text: 在 GitHub 查看
       link: https://github.com/rockyflux/xf-blog
