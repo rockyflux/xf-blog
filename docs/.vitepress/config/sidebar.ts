@@ -4,6 +4,9 @@ import matter from 'gray-matter';
 import { getChineseZodiac, getChineseZodiacAlias } from '../theme/utils.ts';
 const sync = fg.sync;
 
+// GitHub Pages 部署的 base 路径
+const base = '/xf-blog';
+
 export const sidebar: DefaultTheme.Config['sidebar'] = {
   // 开发工具
   '/dev-tools/editor/': getItemsByDate("dev-tools/editor"),
@@ -111,7 +114,7 @@ function getItemsByDate (path: string) {
 
     // 添加年份分组
     yearGroups.unshift({
-      text: `<img class="chinese-zodiac" style="position: static; vertical-align: middle; padding-bottom: 3px;" src="/img/svg/chinese-zodiac/${getChineseZodiac(year.replace('年', ''))}.svg" title="${getChineseZodiacAlias(year.replace('年', ''))}" alt="生肖">
+      text: `<img class="chinese-zodiac" style="position: static; vertical-align: middle; padding-bottom: 3px;" src="${base}/img/svg/chinese-zodiac/${getChineseZodiac(year.replace('年', ''))}.svg" title="${getChineseZodiacAlias(year.replace('年', ''))}" alt="生肖">
             ${year}年 (${articleItems.length}篇)`,
       items: articleItems,
       collapsed: true,
