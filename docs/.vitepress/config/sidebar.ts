@@ -1,3 +1,5 @@
+import {DefaultTheme} from "vitepress";
+
 export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/dev-tools/': [
     {
@@ -17,6 +19,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '图表工具', link: '/dev-tools/diagram-tools/' },
       ],
     },
+    {
+      text: '博客文章',
+      items: [
+        { text: '高效开发工具推荐', link: '/dev-tools/blog/2026/01/18/高效开发工具推荐' },
+        { text: '开发工具配置技巧', link: '/dev-tools/blog/2026/01/19/开发工具配置技巧' },
+        { text: '开发工具插件推荐', link: '/dev-tools/blog/2026/01/20/开发工具插件推荐' },
+        { text: '开发工具使用心得', link: '/dev-tools/blog/2026/01/21/开发工具使用心得' },
+      ],
+    },
   ],
 
   '/tutorials/': [
@@ -32,6 +43,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '开发环境管理', link: '/tutorials/dev-env/' },
         { text: '插件', link: '/tutorials/plugins/' },
         { text: '内外穿透', link: '/tutorials/nat-traversal/' },
+      ],
+    },
+    {
+      text: '博客文章',
+      items: [
+        { text: '前端开发入门指南', link: '/tutorials/blog/2026/01/18/前端开发入门指南' },
+        { text: '后端开发最佳实践', link: '/tutorials/blog/2026/01/19/后端开发最佳实践' },
+        { text: '全栈开发学习路径', link: '/tutorials/blog/2026/01/20/全栈开发学习路径' },
+        { text: '代码审查的重要性', link: '/tutorials/blog/2026/01/21/代码审查的重要性' },
       ],
     },
   ],
@@ -58,6 +78,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '教程', link: '/ai/learning/' },
       ],
     },
+    {
+      text: '博客文章',
+      items: [
+        { text: 'AI在开发中的应用', link: '/ai/blog/2026/01/18/AI在开发中的应用' },
+        { text: '大语言模型使用技巧', link: '/ai/blog/2026/01/19/大语言模型使用技巧' },
+        { text: 'AI工具对比分析', link: '/ai/blog/2026/01/20/AI工具对比分析' },
+        { text: 'AI辅助学习编程', link: '/ai/blog/2026/01/21/AI辅助学习编程' },
+      ],
+    },
   ],
 
   '/online-tools/': [
@@ -71,6 +100,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '影视', link: '/online-tools/media/' },
         { text: '在线学习', link: '/online-tools/learning/' },
         { text: '博客分享', link: '/online-tools/blogs/' },
+      ],
+    },
+    {
+      text: '博客文章',
+      items: [
+        { text: '在线工具使用指南', link: '/online-tools/blog/2026/01/18/在线工具使用指南' },
+        { text: '在线协作工具推荐', link: '/online-tools/blog/2026/01/19/在线协作工具推荐' },
+        { text: '在线学习平台对比', link: '/online-tools/blog/2026/01/20/在线学习平台对比' },
+        { text: '在线工具安全使用', link: '/online-tools/blog/2026/01/21/在线工具安全使用' },
       ],
     },
   ],
@@ -101,6 +139,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '充电头', link: '/computer/basics/charger/' },
       ],
     },
+    {
+      text: '博客文章',
+      items: [
+        { text: 'Windows系统优化技巧', link: '/computer/blog/2026/01/18/Windows系统优化技巧' },
+        { text: '电脑硬件升级指南', link: '/computer/blog/2026/01/19/电脑硬件升级指南' },
+        { text: '软件推荐与配置', link: '/computer/blog/2026/01/20/软件推荐与配置' },
+        { text: '电脑故障排查方法', link: '/computer/blog/2026/01/21/电脑故障排查方法' },
+      ],
+    },
   ],
 
   '/browser/': [
@@ -113,6 +160,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '开发插件', link: '/browser/dev-extensions/' },
         { text: '自用插件', link: '/browser/extensions/' },
         { text: '指纹浏览器', link: '/browser/fingerprint/' },
+      ],
+    },
+    {
+      text: '博客文章',
+      items: [
+        { text: '浏览器性能优化', link: '/browser/blog/2026/01/18/浏览器性能优化' },
+        { text: '浏览器插件开发入门', link: '/browser/blog/2026/01/19/浏览器插件开发入门' },
+        { text: '浏览器安全设置', link: '/browser/blog/2026/01/20/浏览器安全设置' },
+        { text: '浏览器使用技巧', link: '/browser/blog/2026/01/21/浏览器使用技巧' },
       ],
     },
   ],
