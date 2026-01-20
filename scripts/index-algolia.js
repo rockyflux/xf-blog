@@ -119,23 +119,43 @@ async function getMarkdownFiles() {
           const headingId = heading.text.toLowerCase()
             .replace(/[^\w\s-]/g, '')
             .replace(/\s+/g, '-');
-          
+
+          // 提取该标题下的内容（到下一个同级或更高级标题）
+          const startIndex = body.indexOf(heading.text);
+          let endIndex = body.length;
+
+          // 找到下一个同级或更高级标题的位置
+          for (let i = index + 1; i < headings.length; i++) {
+            if (headings[i].level <= heading.level) {
+              const nextHeadingText = headings[i].text;
+              const nextHeadingIndex = body.indexOf(nextHeadingText, startIndex + heading.text.length);
+              if (nextHeadingIndex !== -1) {
+                endIndex = nextHeadingIndex;
+                break;
+              }
+            }
+          }
+
+          // 提取该标题下的内容并清理
+          const sectionContent = body.substring(startIndex, endIndex);
+          const sectionCleanedContent = cleanContent(sectionContent);
+
           const hierarchy = {
             lvl0: category || '文档',
             lvl1: title,
           };
-          
+
           if (heading.level === 2) {
             hierarchy.lvl2 = heading.text;
           } else if (heading.level === 3) {
             hierarchy.lvl2 = headings.find(h => h.level === 2 && headings.indexOf(h) < index)?.text || title;
             hierarchy.lvl3 = heading.text;
           }
-          
+
           allRecords.push({
             objectID: `${relativePath}-${index}`,
             hierarchy: hierarchy,
-            content: cleanedContent,
+            content: sectionCleanedContent,
             url: `${url}#${headingId}`,
             anchor: headingId,
             type: 'content',
