@@ -20,7 +20,7 @@
       <p v-if="theme.footerConfig.copyright" class="copyright" v-html="theme.footerConfig.copyright"></p>
       <!-- 不蒜子统计图标代码 Start -->
       <p class="busuanzi-stats">
-        <a href="https://www.busuanzi.cc/count.php?search=rockyflux.github.io/xf-blog" title="不蒜子统计" target="_blank">
+        <a href="https://www.busuanzi.cc/count.php?search=rockyflux.github.io" title="不蒜子统计" target="_blank">
           <img style="width:85px;height:25px;" src="https://www.busuanzi.cc/static/images/bsz-tongji.png" alt="不蒜子统计">
         </a>
       </p>

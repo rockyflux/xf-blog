@@ -140,6 +140,7 @@ export const sidebar = {
         { text: '大语言模型简介', link: '/ai/models/2026/01/17/大语言模型简介' },
         { text: 'Midjourney使用技巧', link: '/ai/tools/2026/01/17/Midjourney使用技巧' },
         { text: 'ChatGPT使用技巧', link: '/ai/tools/2026/01/18/ChatGPT使用技巧' },
+        { text: 'Doubao Downloader：抖音视频下载工具', link: '/ai/blog/2026/01/22/doubao-downloader介绍' },
       ],
     },
   ],
