@@ -4,6 +4,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/dev-tools/': [
     {
       text: '开发工具',
+      collapsible: true,
+      collapsed: false,
       items: [
         { text: '编辑器', link: '/dev-tools/editor/' },
         { text: '集成开发环境', link: '/dev-tools/ide/' },
@@ -21,6 +23,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     },
     {
       text: '博客文章',
+      collapsible: true,
+      collapsed: false,
       items: [
         { text: '高效开发工具推荐', link: '/dev-tools/blog/2026/01/18/高效开发工具推荐' },
         { text: '开发工具配置技巧', link: '/dev-tools/blog/2026/01/19/开发工具配置技巧' },
@@ -33,6 +37,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/tutorials/': [
     {
       text: '开发教程',
+      collapsible: true,
+      collapsed: false,
       items: [
         { text: 'JAVA教程', link: '/tutorials/java/' },
         { text: 'JAVA框架', link: '/tutorials/java-framework/' },
@@ -42,16 +48,19 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'AI开发技术', link: '/tutorials/ai-tech/' },
         { text: '开发环境管理', link: '/tutorials/dev-env/' },
         { text: '插件', link: '/tutorials/plugins/' },
-        { text: '内外穿透', link: '/tutorials/nat-traversal/' },
+        { text: '内外穿透', link: '/tutorials/nat-traversal/' }
       ],
     },
     {
       text: '博客文章',
+      collapsible: true,
+      collapsed: false,
       items: [
         { text: '前端开发入门指南', link: '/tutorials/blog/2026/01/18/前端开发入门指南' },
         { text: '后端开发最佳实践', link: '/tutorials/blog/2026/01/19/后端开发最佳实践' },
         { text: '全栈开发学习路径', link: '/tutorials/blog/2026/01/20/全栈开发学习路径' },
         { text: '代码审查的重要性', link: '/tutorials/blog/2026/01/21/代码审查的重要性' },
+        { text: '个人常用Linux命令', link: '/tutorials/devops/2019/12/31/个人常用Linux命令' },
       ],
     },
   ],
@@ -59,6 +68,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/ai/': [
     {
       text: 'AI相关',
+      collapsible: true,
+      collapsed: false,
       items: [
         { text: 'AI客户端', link: '/ai/clients/' },
         { text: 'LLM开放平台', link: '/ai/llm-platform/' },
@@ -80,6 +91,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     },
     {
       text: '博客文章',
+      collapsible: true,
+      collapsed: false,
       items: [
         { text: 'AI在开发中的应用', link: '/ai/blog/2026/01/18/AI在开发中的应用' },
         { text: '大语言模型使用技巧', link: '/ai/blog/2026/01/19/大语言模型使用技巧' },
@@ -92,6 +105,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/online-tools/': [
     {
       text: '在线工具',
+      collapsible: true,
+      collapsed: false,
       items: [
         { text: '各种工具', link: '/online-tools/various/' },
         { text: '翻译', link: '/online-tools/translate/' },
@@ -104,6 +119,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     },
     {
       text: '博客文章',
+      collapsible: true,
+      collapsed: false,
       items: [
         { text: '在线工具使用指南', link: '/online-tools/blog/2026/01/18/在线工具使用指南' },
         { text: '在线协作工具推荐', link: '/online-tools/blog/2026/01/19/在线协作工具推荐' },
@@ -116,6 +133,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/computer/': [
     {
       text: '折腾电脑',
+      collapsible: true,
+      collapsed: false,
       items: [
         { text: 'window优化', link: '/computer/system-optimization/' },
         { text: '文件同步', link: '/computer/file-sync/' },
@@ -130,6 +149,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     },
     {
       text: '基础条件',
+      collapsible: true,
+      collapsed: false,
       items: [
         { text: '魔法上网', link: '/computer/basics/network/' },
         { text: '鼠标键盘', link: '/computer/basics/peripherals/' },
@@ -141,6 +162,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     },
     {
       text: '博客文章',
+      collapsible: true,
+      collapsed: false,
       items: [
         { text: 'Windows系统优化技巧', link: '/computer/blog/2026/01/18/Windows系统优化技巧' },
         { text: '电脑硬件升级指南', link: '/computer/blog/2026/01/19/电脑硬件升级指南' },
@@ -153,6 +176,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/browser/': [
     {
       text: '浏览器',
+      collapsible: true,
+      collapsed: false,
       items: [
         { text: '新标签卡插件', link: '/browser/newtab/' },
         { text: '油猴脚本', link: '/browser/userscript/' },
@@ -164,6 +189,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     },
     {
       text: '博客文章',
+      collapsible: true,
+      collapsed: false,
       items: [
         { text: '浏览器性能优化', link: '/browser/blog/2026/01/18/浏览器性能优化' },
         { text: '浏览器插件开发入门', link: '/browser/blog/2026/01/19/浏览器插件开发入门' },
