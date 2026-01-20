@@ -18,6 +18,13 @@
         </span>
       </p>
       <p v-if="theme.footerConfig.copyright" class="copyright" v-html="theme.footerConfig.copyright"></p>
+      <!-- 不蒜子统计图标代码 Start -->
+      <p class="busuanzi-stats">
+        <a href="https://www.busuanzi.cc/count.php?search=rockyflux.github.io/xf-blog" title="不蒜子统计" target="_blank">
+          <img style="width:85px;height:25px;" src="https://www.busuanzi.cc/static/images/bsz-tongji.png" alt="不蒜子统计">
+        </a>
+      </p>
+      <!-- 不蒜子统计图标代码 End -->
     </div>
   </footer>
 </template>
@@ -53,7 +60,8 @@ a:hover {
   text-align: center;
 }
 .recordCode,
-.copyright {
+.copyright,
+.busuanzi-stats {
   line-height: 24px;
   font-size: 14px;
   font-weight: 500;
@@ -61,6 +69,17 @@ a:hover {
 }
 .recordCode   { order: 2; }
 .copyright { order: 1; }
+.busuanzi-stats { 
+  order: 3; 
+  margin-top: 8px;
+}
+.busuanzi-stats a {
+  display: inline-block;
+  text-decoration: none;
+}
+.busuanzi-stats a:hover {
+  opacity: 0.8;
+}
 
 p {
   margin: 0;

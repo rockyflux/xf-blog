@@ -21,4 +21,7 @@ export const head: HeadConfig[] = [
   // 51.la 统计代码（暂时禁用，脚本加载失败会阻止页面功能）
   // ['script', { charset: 'UTF-8', id: 'LA_COLLECT', src: '//sdk.51.la/js-sdk-pro.min.js' }],
   // ['script', {}, `LA.init({id:"L4aKnGXQoGpLqzDP",ck:"L4aKnGXQoGpLqzDP",autoTrack:true,hashMode:true,screenRecord:true})`],
+
+  // 不蒜子阅读数统计（免费，无需后端）
+  ['script', { src: '//cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js', defer: true }],
 ];

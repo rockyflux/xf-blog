@@ -6,7 +6,7 @@ import { localSearchOptions } from './search/local-search';
 
 export const themeConfig: DefaultTheme.Config = {
   nav, // 导航栏配置
-  sidebar, // 侧边栏配置
+  sidebar: sidebar as DefaultTheme.Config['sidebar'], // 侧边栏配置
 
   logo: '/logo.png',
   outline: {
@@ -63,7 +63,7 @@ export const themeConfig: DefaultTheme.Config = {
   articleMetadataConfig: {
     author: '箫风', // 文章全局默认作者名称
     authorLink: 'https://rockyflux.github.io/xf-blog', // 点击作者名时默认跳转的链接
-    showViewCount: false, // 是否显示文章阅读数, 需要在 docs/.vitepress/theme/api/config.js 及 interface.js 配置好相应 API 接口
+    showViewCount: true, // 是否显示文章阅读数（已配置不蒜子免费统计服务，设置为 true 即可启用）
   },
   // 自定义扩展: 文章版权配置
   copyrightConfig: {
