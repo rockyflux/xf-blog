@@ -1,4 +1,21 @@
+---
+title: Skill 与 MCP 深度对比
+author: 箫风
+date: 2026/01/17 14:00
+isTop: false
+categories:
+ - AI相关
+tags:
+ - AI
+ - 工具
+ - Skill
+ - MCP
+ - 对比
+---
+
 # Skill 与 MCP 深度对比
+
+<!-- more -->
 
 首先，官方文档非常值得细细品味，看完官方文档倒也可以考虑不用看其他的文章了（针对 skill，mcp 这一块感觉描述一般，mcp 太多东西了）：
 
