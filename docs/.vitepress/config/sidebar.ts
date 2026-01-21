@@ -106,6 +106,174 @@ export const sidebar = {
     },
   ],
 
+  '/tutorials/devops/': [
+    {
+      text: '开发教程博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: '前端开发入门指南', link: '/tutorials/blog/2026/01/18/前端开发入门指南' },
+        { text: '后端开发最佳实践', link: '/tutorials/blog/2026/01/19/后端开发最佳实践' },
+        { text: '全栈开发学习路径', link: '/tutorials/blog/2026/01/20/全栈开发学习路径' },
+        { text: '代码审查的重要性', link: '/tutorials/blog/2026/01/21/代码审查的重要性' },
+        { text: '个人常用Linux命令', link: '/tutorials/devops/2019/12/31/个人常用Linux命令' },
+        { text: '排序算法', link: '/tutorials/algorithm/2026/01/17/排序算法' },
+        { text: '数据结构基础', link: '/tutorials/algorithm/2026/01/18/数据结构基础' },
+        { text: 'Express框架入门', link: '/tutorials/backend/2026/01/16/Express框架入门' },
+        { text: 'Node.js异步编程', link: '/tutorials/backend/2026/01/17/Node.js异步编程' },
+        { text: 'MongoDB基础操作', link: '/tutorials/database/2026/01/17/MongoDB基础操作' },
+        { text: 'MySQL优化技巧', link: '/tutorials/database/2026/01/18/MySQL优化技巧' },
+        { text: 'Jenkins持续集成', link: '/tutorials/devops/2026/01/17/Jenkins持续集成' },
+        { text: 'Kubernetes基础', link: '/tutorials/devops/2026/01/18/Kubernetes基础' },
+        { text: 'TypeScript基础', link: '/tutorials/frontend/2026/01/16/TypeScript基础' },
+        { text: 'React Hooks详解', link: '/tutorials/frontend/2026/01/17/React Hooks详解' },
+        { text: 'Vue3组合式API入门', link: '/tutorials/frontend/2026/01/18/Vue3组合式API入门' },
+        { text: 'Flutter开发指南', link: '/tutorials/mobile/2026/01/17/Flutter开发指南' },
+        { text: 'React Native入门', link: '/tutorials/mobile/2026/01/18/React Native入门' },
+      ],
+    },
+  ],
+
+  '/tutorials/algorithm/': [
+    {
+      text: '开发教程博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: '前端开发入门指南', link: '/tutorials/blog/2026/01/18/前端开发入门指南' },
+        { text: '后端开发最佳实践', link: '/tutorials/blog/2026/01/19/后端开发最佳实践' },
+        { text: '全栈开发学习路径', link: '/tutorials/blog/2026/01/20/全栈开发学习路径' },
+        { text: '代码审查的重要性', link: '/tutorials/blog/2026/01/21/代码审查的重要性' },
+        { text: '个人常用Linux命令', link: '/tutorials/devops/2019/12/31/个人常用Linux命令' },
+        { text: '排序算法', link: '/tutorials/algorithm/2026/01/17/排序算法' },
+        { text: '数据结构基础', link: '/tutorials/algorithm/2026/01/18/数据结构基础' },
+        { text: 'Express框架入门', link: '/tutorials/backend/2026/01/16/Express框架入门' },
+        { text: 'Node.js异步编程', link: '/tutorials/backend/2026/01/17/Node.js异步编程' },
+        { text: 'MongoDB基础操作', link: '/tutorials/database/2026/01/17/MongoDB基础操作' },
+        { text: 'MySQL优化技巧', link: '/tutorials/database/2026/01/18/MySQL优化技巧' },
+        { text: 'Jenkins持续集成', link: '/tutorials/devops/2026/01/17/Jenkins持续集成' },
+        { text: 'Kubernetes基础', link: '/tutorials/devops/2026/01/18/Kubernetes基础' },
+        { text: 'TypeScript基础', link: '/tutorials/frontend/2026/01/16/TypeScript基础' },
+        { text: 'React Hooks详解', link: '/tutorials/frontend/2026/01/17/React Hooks详解' },
+        { text: 'Vue3组合式API入门', link: '/tutorials/frontend/2026/01/18/Vue3组合式API入门' },
+        { text: 'Flutter开发指南', link: '/tutorials/mobile/2026/01/17/Flutter开发指南' },
+        { text: 'React Native入门', link: '/tutorials/mobile/2026/01/18/React Native入门' },
+      ],
+    },
+  ],
+
+  '/tutorials/backend/': [
+    {
+      text: '开发教程博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: '前端开发入门指南', link: '/tutorials/blog/2026/01/18/前端开发入门指南' },
+        { text: '后端开发最佳实践', link: '/tutorials/blog/2026/01/19/后端开发最佳实践' },
+        { text: '全栈开发学习路径', link: '/tutorials/blog/2026/01/20/全栈开发学习路径' },
+        { text: '代码审查的重要性', link: '/tutorials/blog/2026/01/21/代码审查的重要性' },
+        { text: '个人常用Linux命令', link: '/tutorials/devops/2019/12/31/个人常用Linux命令' },
+        { text: '排序算法', link: '/tutorials/algorithm/2026/01/17/排序算法' },
+        { text: '数据结构基础', link: '/tutorials/algorithm/2026/01/18/数据结构基础' },
+        { text: 'Express框架入门', link: '/tutorials/backend/2026/01/16/Express框架入门' },
+        { text: 'Node.js异步编程', link: '/tutorials/backend/2026/01/17/Node.js异步编程' },
+        { text: 'MongoDB基础操作', link: '/tutorials/database/2026/01/17/MongoDB基础操作' },
+        { text: 'MySQL优化技巧', link: '/tutorials/database/2026/01/18/MySQL优化技巧' },
+        { text: 'Jenkins持续集成', link: '/tutorials/devops/2026/01/17/Jenkins持续集成' },
+        { text: 'Kubernetes基础', link: '/tutorials/devops/2026/01/18/Kubernetes基础' },
+        { text: 'TypeScript基础', link: '/tutorials/frontend/2026/01/16/TypeScript基础' },
+        { text: 'React Hooks详解', link: '/tutorials/frontend/2026/01/17/React Hooks详解' },
+        { text: 'Vue3组合式API入门', link: '/tutorials/frontend/2026/01/18/Vue3组合式API入门' },
+        { text: 'Flutter开发指南', link: '/tutorials/mobile/2026/01/17/Flutter开发指南' },
+        { text: 'React Native入门', link: '/tutorials/mobile/2026/01/18/React Native入门' },
+      ],
+    },
+  ],
+
+  '/tutorials/database/': [
+    {
+      text: '开发教程博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: '前端开发入门指南', link: '/tutorials/blog/2026/01/18/前端开发入门指南' },
+        { text: '后端开发最佳实践', link: '/tutorials/blog/2026/01/19/后端开发最佳实践' },
+        { text: '全栈开发学习路径', link: '/tutorials/blog/2026/01/20/全栈开发学习路径' },
+        { text: '代码审查的重要性', link: '/tutorials/blog/2026/01/21/代码审查的重要性' },
+        { text: '个人常用Linux命令', link: '/tutorials/devops/2019/12/31/个人常用Linux命令' },
+        { text: '排序算法', link: '/tutorials/algorithm/2026/01/17/排序算法' },
+        { text: '数据结构基础', link: '/tutorials/algorithm/2026/01/18/数据结构基础' },
+        { text: 'Express框架入门', link: '/tutorials/backend/2026/01/16/Express框架入门' },
+        { text: 'Node.js异步编程', link: '/tutorials/backend/2026/01/17/Node.js异步编程' },
+        { text: 'MongoDB基础操作', link: '/tutorials/database/2026/01/17/MongoDB基础操作' },
+        { text: 'MySQL优化技巧', link: '/tutorials/database/2026/01/18/MySQL优化技巧' },
+        { text: 'Jenkins持续集成', link: '/tutorials/devops/2026/01/17/Jenkins持续集成' },
+        { text: 'Kubernetes基础', link: '/tutorials/devops/2026/01/18/Kubernetes基础' },
+        { text: 'TypeScript基础', link: '/tutorials/frontend/2026/01/16/TypeScript基础' },
+        { text: 'React Hooks详解', link: '/tutorials/frontend/2026/01/17/React Hooks详解' },
+        { text: 'Vue3组合式API入门', link: '/tutorials/frontend/2026/01/18/Vue3组合式API入门' },
+        { text: 'Flutter开发指南', link: '/tutorials/mobile/2026/01/17/Flutter开发指南' },
+        { text: 'React Native入门', link: '/tutorials/mobile/2026/01/18/React Native入门' },
+      ],
+    },
+  ],
+
+  '/tutorials/frontend/': [
+    {
+      text: '开发教程博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: '前端开发入门指南', link: '/tutorials/blog/2026/01/18/前端开发入门指南' },
+        { text: '后端开发最佳实践', link: '/tutorials/blog/2026/01/19/后端开发最佳实践' },
+        { text: '全栈开发学习路径', link: '/tutorials/blog/2026/01/20/全栈开发学习路径' },
+        { text: '代码审查的重要性', link: '/tutorials/blog/2026/01/21/代码审查的重要性' },
+        { text: '个人常用Linux命令', link: '/tutorials/devops/2019/12/31/个人常用Linux命令' },
+        { text: '排序算法', link: '/tutorials/algorithm/2026/01/17/排序算法' },
+        { text: '数据结构基础', link: '/tutorials/algorithm/2026/01/18/数据结构基础' },
+        { text: 'Express框架入门', link: '/tutorials/backend/2026/01/16/Express框架入门' },
+        { text: 'Node.js异步编程', link: '/tutorials/backend/2026/01/17/Node.js异步编程' },
+        { text: 'MongoDB基础操作', link: '/tutorials/database/2026/01/17/MongoDB基础操作' },
+        { text: 'MySQL优化技巧', link: '/tutorials/database/2026/01/18/MySQL优化技巧' },
+        { text: 'Jenkins持续集成', link: '/tutorials/devops/2026/01/17/Jenkins持续集成' },
+        { text: 'Kubernetes基础', link: '/tutorials/devops/2026/01/18/Kubernetes基础' },
+        { text: 'TypeScript基础', link: '/tutorials/frontend/2026/01/16/TypeScript基础' },
+        { text: 'React Hooks详解', link: '/tutorials/frontend/2026/01/17/React Hooks详解' },
+        { text: 'Vue3组合式API入门', link: '/tutorials/frontend/2026/01/18/Vue3组合式API入门' },
+        { text: 'Flutter开发指南', link: '/tutorials/mobile/2026/01/17/Flutter开发指南' },
+        { text: 'React Native入门', link: '/tutorials/mobile/2026/01/18/React Native入门' },
+      ],
+    },
+  ],
+
+  '/tutorials/mobile/': [
+    {
+      text: '开发教程博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: '前端开发入门指南', link: '/tutorials/blog/2026/01/18/前端开发入门指南' },
+        { text: '后端开发最佳实践', link: '/tutorials/blog/2026/01/19/后端开发最佳实践' },
+        { text: '全栈开发学习路径', link: '/tutorials/blog/2026/01/20/全栈开发学习路径' },
+        { text: '代码审查的重要性', link: '/tutorials/blog/2026/01/21/代码审查的重要性' },
+        { text: '个人常用Linux命令', link: '/tutorials/devops/2019/12/31/个人常用Linux命令' },
+        { text: '排序算法', link: '/tutorials/algorithm/2026/01/17/排序算法' },
+        { text: '数据结构基础', link: '/tutorials/algorithm/2026/01/18/数据结构基础' },
+        { text: 'Express框架入门', link: '/tutorials/backend/2026/01/16/Express框架入门' },
+        { text: 'Node.js异步编程', link: '/tutorials/backend/2026/01/17/Node.js异步编程' },
+        { text: 'MongoDB基础操作', link: '/tutorials/database/2026/01/17/MongoDB基础操作' },
+        { text: 'MySQL优化技巧', link: '/tutorials/database/2026/01/18/MySQL优化技巧' },
+        { text: 'Jenkins持续集成', link: '/tutorials/devops/2026/01/17/Jenkins持续集成' },
+        { text: 'Kubernetes基础', link: '/tutorials/devops/2026/01/18/Kubernetes基础' },
+        { text: 'TypeScript基础', link: '/tutorials/frontend/2026/01/16/TypeScript基础' },
+        { text: 'React Hooks详解', link: '/tutorials/frontend/2026/01/17/React Hooks详解' },
+        { text: 'Vue3组合式API入门', link: '/tutorials/frontend/2026/01/18/Vue3组合式API入门' },
+        { text: 'Flutter开发指南', link: '/tutorials/mobile/2026/01/17/Flutter开发指南' },
+        { text: 'React Native入门', link: '/tutorials/mobile/2026/01/18/React Native入门' },
+      ],
+    },
+  ],
+
   '/ai/': [
     {
       text: 'AI相关',
@@ -134,6 +302,154 @@ export const sidebar = {
   ],
 
   '/ai/blog/': [
+    {
+      text: 'AI相关博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: 'AI在开发中的应用', link: '/ai/blog/2026/01/18/AI在开发中的应用' },
+        { text: '大语言模型使用技巧', link: '/ai/blog/2026/01/19/大语言模型使用技巧' },
+        { text: 'AI工具对比分析', link: '/ai/blog/2026/01/20/AI工具对比分析' },
+        { text: 'AI辅助学习编程', link: '/ai/blog/2026/01/21/AI辅助学习编程' },
+        { text: 'AI图像识别应用', link: '/ai/applications/2026/01/17/AI图像识别应用' },
+        { text: 'AI代码生成实践', link: '/ai/applications/2026/01/18/AI代码生成实践' },
+        { text: 'AI学习路径', link: '/ai/learning/2026/01/18/AI学习路径' },
+        { text: 'GPT模型对比', link: '/ai/models/2026/01/16/GPT模型对比' },
+        { text: '豆包AI无水印下载', link: '/ai/blog/2026/01/22/doubao-downloader介绍' },
+        { text: 'MCP协议使用指南', link: '/ai/blog/2026/01/23/MCP协议使用指南' },
+        {
+          text: 'Agent智能体',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            { text: 'SubAgent 与 Skills：AI Agent 的两种扩展方式', link: '/ai/models/2026/01/17/SubAgent与Skills：AI Agent的两种扩展方式' },
+            { text: 'Skill与MCP深度对比', link: '/ai/tools/2026/01/17/Skill与MCP深度对比' },
+          ],
+        },
+        {
+          text: 'AI编程工具',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            { text: 'AI编程工具汇总对比', link: '/ai/tools/2026/01/18/AI编程工具汇总对比' },
+          ],
+        },
+      ],
+    },
+  ],
+
+  '/ai/applications/': [
+    {
+      text: 'AI相关博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: 'AI在开发中的应用', link: '/ai/blog/2026/01/18/AI在开发中的应用' },
+        { text: '大语言模型使用技巧', link: '/ai/blog/2026/01/19/大语言模型使用技巧' },
+        { text: 'AI工具对比分析', link: '/ai/blog/2026/01/20/AI工具对比分析' },
+        { text: 'AI辅助学习编程', link: '/ai/blog/2026/01/21/AI辅助学习编程' },
+        { text: 'AI图像识别应用', link: '/ai/applications/2026/01/17/AI图像识别应用' },
+        { text: 'AI代码生成实践', link: '/ai/applications/2026/01/18/AI代码生成实践' },
+        { text: 'AI学习路径', link: '/ai/learning/2026/01/18/AI学习路径' },
+        { text: 'GPT模型对比', link: '/ai/models/2026/01/16/GPT模型对比' },
+        { text: '豆包AI无水印下载', link: '/ai/blog/2026/01/22/doubao-downloader介绍' },
+        { text: 'MCP协议使用指南', link: '/ai/blog/2026/01/23/MCP协议使用指南' },
+        {
+          text: 'Agent智能体',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            { text: 'SubAgent 与 Skills：AI Agent 的两种扩展方式', link: '/ai/models/2026/01/17/SubAgent与Skills：AI Agent的两种扩展方式' },
+            { text: 'Skill与MCP深度对比', link: '/ai/tools/2026/01/17/Skill与MCP深度对比' },
+          ],
+        },
+        {
+          text: 'AI编程工具',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            { text: 'AI编程工具汇总对比', link: '/ai/tools/2026/01/18/AI编程工具汇总对比' },
+          ],
+        },
+      ],
+    },
+  ],
+
+  '/ai/learning/': [
+    {
+      text: 'AI相关博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: 'AI在开发中的应用', link: '/ai/blog/2026/01/18/AI在开发中的应用' },
+        { text: '大语言模型使用技巧', link: '/ai/blog/2026/01/19/大语言模型使用技巧' },
+        { text: 'AI工具对比分析', link: '/ai/blog/2026/01/20/AI工具对比分析' },
+        { text: 'AI辅助学习编程', link: '/ai/blog/2026/01/21/AI辅助学习编程' },
+        { text: 'AI图像识别应用', link: '/ai/applications/2026/01/17/AI图像识别应用' },
+        { text: 'AI代码生成实践', link: '/ai/applications/2026/01/18/AI代码生成实践' },
+        { text: 'AI学习路径', link: '/ai/learning/2026/01/18/AI学习路径' },
+        { text: 'GPT模型对比', link: '/ai/models/2026/01/16/GPT模型对比' },
+        { text: '豆包AI无水印下载', link: '/ai/blog/2026/01/22/doubao-downloader介绍' },
+        { text: 'MCP协议使用指南', link: '/ai/blog/2026/01/23/MCP协议使用指南' },
+        {
+          text: 'Agent智能体',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            { text: 'SubAgent 与 Skills：AI Agent 的两种扩展方式', link: '/ai/models/2026/01/17/SubAgent与Skills：AI Agent的两种扩展方式' },
+            { text: 'Skill与MCP深度对比', link: '/ai/tools/2026/01/17/Skill与MCP深度对比' },
+          ],
+        },
+        {
+          text: 'AI编程工具',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            { text: 'AI编程工具汇总对比', link: '/ai/tools/2026/01/18/AI编程工具汇总对比' },
+          ],
+        },
+      ],
+    },
+  ],
+
+  '/ai/models/': [
+    {
+      text: 'AI相关博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: 'AI在开发中的应用', link: '/ai/blog/2026/01/18/AI在开发中的应用' },
+        { text: '大语言模型使用技巧', link: '/ai/blog/2026/01/19/大语言模型使用技巧' },
+        { text: 'AI工具对比分析', link: '/ai/blog/2026/01/20/AI工具对比分析' },
+        { text: 'AI辅助学习编程', link: '/ai/blog/2026/01/21/AI辅助学习编程' },
+        { text: 'AI图像识别应用', link: '/ai/applications/2026/01/17/AI图像识别应用' },
+        { text: 'AI代码生成实践', link: '/ai/applications/2026/01/18/AI代码生成实践' },
+        { text: 'AI学习路径', link: '/ai/learning/2026/01/18/AI学习路径' },
+        { text: 'GPT模型对比', link: '/ai/models/2026/01/16/GPT模型对比' },
+        { text: '豆包AI无水印下载', link: '/ai/blog/2026/01/22/doubao-downloader介绍' },
+        { text: 'MCP协议使用指南', link: '/ai/blog/2026/01/23/MCP协议使用指南' },
+        {
+          text: 'Agent智能体',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            { text: 'SubAgent 与 Skills：AI Agent 的两种扩展方式', link: '/ai/models/2026/01/17/SubAgent与Skills：AI Agent的两种扩展方式' },
+            { text: 'Skill与MCP深度对比', link: '/ai/tools/2026/01/17/Skill与MCP深度对比' },
+          ],
+        },
+        {
+          text: 'AI编程工具',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            { text: 'AI编程工具汇总对比', link: '/ai/tools/2026/01/18/AI编程工具汇总对比' },
+          ],
+        },
+      ],
+    },
+  ],
+
+  '/ai/tools/': [
     {
       text: 'AI相关博客文章',
       collapsible: true,
@@ -209,6 +525,94 @@ export const sidebar = {
     },
   ],
 
+  '/online-tools/code/': [
+    {
+      text: '在线工具博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: '在线工具使用指南', link: '/online-tools/blog/2026/01/18/在线工具使用指南' },
+        { text: '在线协作工具推荐', link: '/online-tools/blog/2026/01/19/在线协作工具推荐' },
+        { text: '在线学习平台对比', link: '/online-tools/blog/2026/01/20/在线学习平台对比' },
+        { text: '在线工具安全使用', link: '/online-tools/blog/2026/01/21/在线工具安全使用' },
+        { text: '在线JSON格式化工具', link: '/online-tools/code/2026/01/17/在线JSON格式化工具' },
+        { text: '在线代码编辑器推荐', link: '/online-tools/code/2026/01/18/在线代码编辑器推荐' },
+        { text: 'PDF转换工具', link: '/online-tools/convert/2026/01/17/PDF转换工具' },
+        { text: '在线格式转换工具', link: '/online-tools/convert/2026/01/18/在线格式转换工具' },
+        { text: '在线配色工具推荐', link: '/online-tools/design/2026/01/16/在线配色工具推荐' },
+        { text: '在线设计工具推荐', link: '/online-tools/design/2026/01/17/在线设计工具推荐' },
+        { text: '在线待办清单工具', link: '/online-tools/productivity/2026/01/17/在线待办清单工具' },
+        { text: '在线笔记工具推荐', link: '/online-tools/productivity/2026/01/18/在线笔记工具推荐' },
+      ],
+    },
+  ],
+
+  '/online-tools/convert/': [
+    {
+      text: '在线工具博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: '在线工具使用指南', link: '/online-tools/blog/2026/01/18/在线工具使用指南' },
+        { text: '在线协作工具推荐', link: '/online-tools/blog/2026/01/19/在线协作工具推荐' },
+        { text: '在线学习平台对比', link: '/online-tools/blog/2026/01/20/在线学习平台对比' },
+        { text: '在线工具安全使用', link: '/online-tools/blog/2026/01/21/在线工具安全使用' },
+        { text: '在线JSON格式化工具', link: '/online-tools/code/2026/01/17/在线JSON格式化工具' },
+        { text: '在线代码编辑器推荐', link: '/online-tools/code/2026/01/18/在线代码编辑器推荐' },
+        { text: 'PDF转换工具', link: '/online-tools/convert/2026/01/17/PDF转换工具' },
+        { text: '在线格式转换工具', link: '/online-tools/convert/2026/01/18/在线格式转换工具' },
+        { text: '在线配色工具推荐', link: '/online-tools/design/2026/01/16/在线配色工具推荐' },
+        { text: '在线设计工具推荐', link: '/online-tools/design/2026/01/17/在线设计工具推荐' },
+        { text: '在线待办清单工具', link: '/online-tools/productivity/2026/01/17/在线待办清单工具' },
+        { text: '在线笔记工具推荐', link: '/online-tools/productivity/2026/01/18/在线笔记工具推荐' },
+      ],
+    },
+  ],
+
+  '/online-tools/design/': [
+    {
+      text: '在线工具博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: '在线工具使用指南', link: '/online-tools/blog/2026/01/18/在线工具使用指南' },
+        { text: '在线协作工具推荐', link: '/online-tools/blog/2026/01/19/在线协作工具推荐' },
+        { text: '在线学习平台对比', link: '/online-tools/blog/2026/01/20/在线学习平台对比' },
+        { text: '在线工具安全使用', link: '/online-tools/blog/2026/01/21/在线工具安全使用' },
+        { text: '在线JSON格式化工具', link: '/online-tools/code/2026/01/17/在线JSON格式化工具' },
+        { text: '在线代码编辑器推荐', link: '/online-tools/code/2026/01/18/在线代码编辑器推荐' },
+        { text: 'PDF转换工具', link: '/online-tools/convert/2026/01/17/PDF转换工具' },
+        { text: '在线格式转换工具', link: '/online-tools/convert/2026/01/18/在线格式转换工具' },
+        { text: '在线配色工具推荐', link: '/online-tools/design/2026/01/16/在线配色工具推荐' },
+        { text: '在线设计工具推荐', link: '/online-tools/design/2026/01/17/在线设计工具推荐' },
+        { text: '在线待办清单工具', link: '/online-tools/productivity/2026/01/17/在线待办清单工具' },
+        { text: '在线笔记工具推荐', link: '/online-tools/productivity/2026/01/18/在线笔记工具推荐' },
+      ],
+    },
+  ],
+
+  '/online-tools/productivity/': [
+    {
+      text: '在线工具博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: '在线工具使用指南', link: '/online-tools/blog/2026/01/18/在线工具使用指南' },
+        { text: '在线协作工具推荐', link: '/online-tools/blog/2026/01/19/在线协作工具推荐' },
+        { text: '在线学习平台对比', link: '/online-tools/blog/2026/01/20/在线学习平台对比' },
+        { text: '在线工具安全使用', link: '/online-tools/blog/2026/01/21/在线工具安全使用' },
+        { text: '在线JSON格式化工具', link: '/online-tools/code/2026/01/17/在线JSON格式化工具' },
+        { text: '在线代码编辑器推荐', link: '/online-tools/code/2026/01/18/在线代码编辑器推荐' },
+        { text: 'PDF转换工具', link: '/online-tools/convert/2026/01/17/PDF转换工具' },
+        { text: '在线格式转换工具', link: '/online-tools/convert/2026/01/18/在线格式转换工具' },
+        { text: '在线配色工具推荐', link: '/online-tools/design/2026/01/16/在线配色工具推荐' },
+        { text: '在线设计工具推荐', link: '/online-tools/design/2026/01/17/在线设计工具推荐' },
+        { text: '在线待办清单工具', link: '/online-tools/productivity/2026/01/17/在线待办清单工具' },
+        { text: '在线笔记工具推荐', link: '/online-tools/productivity/2026/01/18/在线笔记工具推荐' },
+      ],
+    },
+  ],
+
   '/computer/': [
     {
       text: '折腾电脑',
@@ -262,6 +666,90 @@ export const sidebar = {
     },
   ],
 
+  '/computer/hardware/': [
+    {
+      text: '折腾电脑博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: 'Windows系统优化技巧', link: '/computer/blog/2026/01/18/Windows系统优化技巧' },
+        { text: '电脑硬件升级指南', link: '/computer/blog/2026/01/19/电脑硬件升级指南' },
+        { text: '软件推荐与配置', link: '/computer/blog/2026/01/20/软件推荐与配置' },
+        { text: '电脑故障排查方法', link: '/computer/blog/2026/01/21/电脑故障排查方法' },
+        { text: '显卡选购指南', link: '/computer/hardware/2026/01/17/显卡选购指南' },
+        { text: 'CPU选购指南', link: '/computer/hardware/2026/01/18/CPU选购指南' },
+        { text: 'Mac必备软件推荐', link: '/computer/software/2026/01/17/Mac必备软件推荐' },
+        { text: 'Windows必备软件推荐', link: '/computer/software/2026/01/18/Windows必备软件推荐' },
+        { text: 'Windows清理技巧', link: '/computer/system-optimization/2026/01/16/Windows清理技巧' },
+        { text: 'Windows系统优化技巧', link: '/computer/system-optimization/2026/01/17/Windows系统优化技巧' },
+        { text: '常见电脑故障解决', link: '/computer/troubleshooting/2026/01/18/常见电脑故障解决' },
+      ],
+    },
+  ],
+
+  '/computer/software/': [
+    {
+      text: '折腾电脑博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: 'Windows系统优化技巧', link: '/computer/blog/2026/01/18/Windows系统优化技巧' },
+        { text: '电脑硬件升级指南', link: '/computer/blog/2026/01/19/电脑硬件升级指南' },
+        { text: '软件推荐与配置', link: '/computer/blog/2026/01/20/软件推荐与配置' },
+        { text: '电脑故障排查方法', link: '/computer/blog/2026/01/21/电脑故障排查方法' },
+        { text: '显卡选购指南', link: '/computer/hardware/2026/01/17/显卡选购指南' },
+        { text: 'CPU选购指南', link: '/computer/hardware/2026/01/18/CPU选购指南' },
+        { text: 'Mac必备软件推荐', link: '/computer/software/2026/01/17/Mac必备软件推荐' },
+        { text: 'Windows必备软件推荐', link: '/computer/software/2026/01/18/Windows必备软件推荐' },
+        { text: 'Windows清理技巧', link: '/computer/system-optimization/2026/01/16/Windows清理技巧' },
+        { text: 'Windows系统优化技巧', link: '/computer/system-optimization/2026/01/17/Windows系统优化技巧' },
+        { text: '常见电脑故障解决', link: '/computer/troubleshooting/2026/01/18/常见电脑故障解决' },
+      ],
+    },
+  ],
+
+  '/computer/system-optimization/': [
+    {
+      text: '折腾电脑博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: 'Windows系统优化技巧', link: '/computer/blog/2026/01/18/Windows系统优化技巧' },
+        { text: '电脑硬件升级指南', link: '/computer/blog/2026/01/19/电脑硬件升级指南' },
+        { text: '软件推荐与配置', link: '/computer/blog/2026/01/20/软件推荐与配置' },
+        { text: '电脑故障排查方法', link: '/computer/blog/2026/01/21/电脑故障排查方法' },
+        { text: '显卡选购指南', link: '/computer/hardware/2026/01/17/显卡选购指南' },
+        { text: 'CPU选购指南', link: '/computer/hardware/2026/01/18/CPU选购指南' },
+        { text: 'Mac必备软件推荐', link: '/computer/software/2026/01/17/Mac必备软件推荐' },
+        { text: 'Windows必备软件推荐', link: '/computer/software/2026/01/18/Windows必备软件推荐' },
+        { text: 'Windows清理技巧', link: '/computer/system-optimization/2026/01/16/Windows清理技巧' },
+        { text: 'Windows系统优化技巧', link: '/computer/system-optimization/2026/01/17/Windows系统优化技巧' },
+        { text: '常见电脑故障解决', link: '/computer/troubleshooting/2026/01/18/常见电脑故障解决' },
+      ],
+    },
+  ],
+
+  '/computer/troubleshooting/': [
+    {
+      text: '折腾电脑博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: 'Windows系统优化技巧', link: '/computer/blog/2026/01/18/Windows系统优化技巧' },
+        { text: '电脑硬件升级指南', link: '/computer/blog/2026/01/19/电脑硬件升级指南' },
+        { text: '软件推荐与配置', link: '/computer/blog/2026/01/20/软件推荐与配置' },
+        { text: '电脑故障排查方法', link: '/computer/blog/2026/01/21/电脑故障排查方法' },
+        { text: '显卡选购指南', link: '/computer/hardware/2026/01/17/显卡选购指南' },
+        { text: 'CPU选购指南', link: '/computer/hardware/2026/01/18/CPU选购指南' },
+        { text: 'Mac必备软件推荐', link: '/computer/software/2026/01/17/Mac必备软件推荐' },
+        { text: 'Windows必备软件推荐', link: '/computer/software/2026/01/18/Windows必备软件推荐' },
+        { text: 'Windows清理技巧', link: '/computer/system-optimization/2026/01/16/Windows清理技巧' },
+        { text: 'Windows系统优化技巧', link: '/computer/system-optimization/2026/01/17/Windows系统优化技巧' },
+        { text: '常见电脑故障解决', link: '/computer/troubleshooting/2026/01/18/常见电脑故障解决' },
+      ],
+    },
+  ],
+
   '/browser/': [
     {
       text: '浏览器',
@@ -279,6 +767,63 @@ export const sidebar = {
   ],
 
   '/browser/blog/': [
+    {
+      text: '浏览器博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: '浏览器性能优化', link: '/browser/blog/2026/01/18/浏览器性能优化' },
+        { text: '浏览器插件开发入门', link: '/browser/blog/2026/01/19/浏览器插件开发入门' },
+        { text: '浏览器安全设置', link: '/browser/blog/2026/01/20/浏览器安全设置' },
+        { text: '浏览器使用技巧', link: '/browser/blog/2026/01/21/浏览器使用技巧' },
+        { text: 'Chrome高级设置', link: '/browser/config/2026/01/18/Chrome高级设置' },
+        { text: '广告拦截插件推荐', link: '/browser/extensions/2026/01/17/广告拦截插件推荐' },
+        { text: 'Chrome必备插件推荐', link: '/browser/extensions/2026/01/18/Chrome必备插件推荐' },
+        { text: '浏览器性能优化', link: '/browser/tips/2026/01/16/浏览器性能优化' },
+        { text: 'Chrome快捷键大全', link: '/browser/tips/2026/01/17/Chrome快捷键大全' },
+      ],
+    },
+  ],
+
+  '/browser/config/': [
+    {
+      text: '浏览器博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: '浏览器性能优化', link: '/browser/blog/2026/01/18/浏览器性能优化' },
+        { text: '浏览器插件开发入门', link: '/browser/blog/2026/01/19/浏览器插件开发入门' },
+        { text: '浏览器安全设置', link: '/browser/blog/2026/01/20/浏览器安全设置' },
+        { text: '浏览器使用技巧', link: '/browser/blog/2026/01/21/浏览器使用技巧' },
+        { text: 'Chrome高级设置', link: '/browser/config/2026/01/18/Chrome高级设置' },
+        { text: '广告拦截插件推荐', link: '/browser/extensions/2026/01/17/广告拦截插件推荐' },
+        { text: 'Chrome必备插件推荐', link: '/browser/extensions/2026/01/18/Chrome必备插件推荐' },
+        { text: '浏览器性能优化', link: '/browser/tips/2026/01/16/浏览器性能优化' },
+        { text: 'Chrome快捷键大全', link: '/browser/tips/2026/01/17/Chrome快捷键大全' },
+      ],
+    },
+  ],
+
+  '/browser/extensions/': [
+    {
+      text: '浏览器博客文章',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: '浏览器性能优化', link: '/browser/blog/2026/01/18/浏览器性能优化' },
+        { text: '浏览器插件开发入门', link: '/browser/blog/2026/01/19/浏览器插件开发入门' },
+        { text: '浏览器安全设置', link: '/browser/blog/2026/01/20/浏览器安全设置' },
+        { text: '浏览器使用技巧', link: '/browser/blog/2026/01/21/浏览器使用技巧' },
+        { text: 'Chrome高级设置', link: '/browser/config/2026/01/18/Chrome高级设置' },
+        { text: '广告拦截插件推荐', link: '/browser/extensions/2026/01/17/广告拦截插件推荐' },
+        { text: 'Chrome必备插件推荐', link: '/browser/extensions/2026/01/18/Chrome必备插件推荐' },
+        { text: '浏览器性能优化', link: '/browser/tips/2026/01/16/浏览器性能优化' },
+        { text: 'Chrome快捷键大全', link: '/browser/tips/2026/01/17/Chrome快捷键大全' },
+      ],
+    },
+  ],
+
+  '/browser/tips/': [
     {
       text: '浏览器博客文章',
       collapsible: true,
