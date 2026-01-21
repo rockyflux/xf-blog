@@ -21,8 +21,11 @@ export const sidebar = {
         { text: '图表工具', link: '/dev-tools/diagram-tools/' },
       ],
     },
+  ],
+
+  '/dev-tools/blog/': [
     {
-      text: '博客文章',
+      text: '开发工具博客文章',
       collapsible: true,
       collapsed: false,
       items: [
@@ -73,8 +76,11 @@ export const sidebar = {
         { text: '内外穿透', link: '/tutorials/nat-traversal/' }
       ],
     },
+  ],
+
+  '/tutorials/blog/': [
     {
-      text: '博客文章',
+      text: '开发教程博客文章',
       collapsible: true,
       collapsed: false,
       items: [
@@ -125,8 +131,11 @@ export const sidebar = {
         { text: '教程', link: '/ai/learning/' },
       ],
     },
+  ],
+
+  '/ai/blog/': [
     {
-      text: '博客文章',
+      text: 'AI相关博客文章',
       collapsible: true,
       collapsed: false,
       items: [
@@ -138,11 +147,25 @@ export const sidebar = {
         { text: 'AI代码生成实践', link: '/ai/applications/2026/01/18/AI代码生成实践' },
         { text: 'AI学习路径', link: '/ai/learning/2026/01/18/AI学习路径' },
         { text: 'GPT模型对比', link: '/ai/models/2026/01/16/GPT模型对比' },
-        { text: 'SubAgent 与 Skills：AI Agent 的两种扩展方式', link: '/ai/models/2026/01/17/SubAgent与Skills：AI Agent的两种扩展方式' },
-        { text: 'Skill与MCP深度对比', link: '/ai/tools/2026/01/17/Skill与MCP深度对比' },
-        { text: 'AI编程工具汇总对比', link: '/ai/tools/2026/01/18/AI编程工具汇总对比' },
         { text: '豆包AI无水印下载', link: '/ai/blog/2026/01/22/doubao-downloader介绍' },
         { text: 'MCP协议使用指南', link: '/ai/blog/2026/01/23/MCP协议使用指南' },
+        {
+          text: 'Agent智能体',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            { text: 'SubAgent 与 Skills：AI Agent 的两种扩展方式', link: '/ai/models/2026/01/17/SubAgent与Skills：AI Agent的两种扩展方式' },
+            { text: 'Skill与MCP深度对比', link: '/ai/tools/2026/01/17/Skill与MCP深度对比' },
+          ],
+        },
+        {
+          text: 'AI编程工具',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            { text: 'AI编程工具汇总对比', link: '/ai/tools/2026/01/18/AI编程工具汇总对比' },
+          ],
+        },
       ],
     },
   ],
@@ -162,8 +185,11 @@ export const sidebar = {
         { text: '博客分享', link: '/online-tools/blogs/' },
       ],
     },
+  ],
+
+  '/online-tools/blog/': [
     {
-      text: '博客文章',
+      text: '在线工具博客文章',
       collapsible: true,
       collapsed: false,
       items: [
@@ -213,8 +239,11 @@ export const sidebar = {
         { text: '充电头', link: '/computer/basics/charger/' },
       ],
     },
+  ],
+
+  '/computer/blog/': [
     {
-      text: '博客文章',
+      text: '折腾电脑博客文章',
       collapsible: true,
       collapsed: false,
       items: [
@@ -247,8 +276,11 @@ export const sidebar = {
         { text: '指纹浏览器', link: '/browser/fingerprint/' },
       ],
     },
+  ],
+
+  '/browser/blog/': [
     {
-      text: '博客文章',
+      text: '浏览器博客文章',
       collapsible: true,
       collapsed: false,
       items: [
