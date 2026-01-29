@@ -8,10 +8,62 @@ import fg from 'fast-glob';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+/**
+ * 将字符串按 UTF-8 字节数截断（避免 Algolia 单条 record 10KB 限制）
+ */
+function truncateUtf8(str, maxBytes) {
+  if (!str) return '';
+  if (maxBytes <= 0) return '';
+  if (Buffer.byteLength(str, 'utf8') <= maxBytes) return str;
+
+  // 二分查找：找到最大可容纳的字符长度
+  let low = 0;
+  let high = str.length;
+
+  while (low < high) {
+    const mid = Math.floor((low + high) / 2);
+    const slice = str.slice(0, mid);
+    if (Buffer.byteLength(slice, 'utf8') <= maxBytes) {
+      low = mid + 1;
+    } else {
+      high = mid;
+    }
+  }
+
+  // low 可能比实际可用长度大 1（或相等），回退一位
+  const safeLen = Math.max(0, low - 1);
+  return str.slice(0, safeLen);
+}
+
+/**
+ * 确保单条 Algolia record 不超过指定字节数
+ */
+function ensureAlgoliaRecordSize(record, maxRecordBytes = 9500) {
+  const json = JSON.stringify(record);
+  const totalBytes = Buffer.byteLength(json, 'utf8');
+  if (totalBytes <= maxRecordBytes) return record;
+
+  const content = typeof record.content === 'string' ? record.content : '';
+  const contentBytes = Buffer.byteLength(content, 'utf8');
+  const overheadBytes = totalBytes - contentBytes;
+  const allowedContentBytes = Math.max(0, maxRecordBytes - overheadBytes);
+
+  record.content = truncateUtf8(content, allowedContentBytes);
+  return record;
+}
+
 // Algolia 配置
-const ALGOLIA_APP_ID = 'JF17SJJSHZ';
-const ALGOLIA_API_KEY = '3cb40bb1dec53a952c4c63c515571435'; // 管理 API Key（用于写入）
-const ALGOLIA_INDEX_NAME = 'xfblog';
+const ALGOLIA_APP_ID = process.env.ALGOLIA_APP_ID || 'JF17SJJSHZ';
+// 管理 API Key（用于写入），请通过环境变量注入，避免把密钥提交到仓库
+const ALGOLIA_API_KEY = process.env.ALGOLIA_API_KEY;
+const ALGOLIA_INDEX_NAME = process.env.ALGOLIA_INDEX_NAME || 'xfblog';
+
+if (!ALGOLIA_API_KEY) {
+  console.error('❌ 缺少环境变量 ALGOLIA_API_KEY（Algolia 管理 API Key，用于写入索引）');
+  console.error('   例如（PowerShell）：');
+  console.error('   $env:ALGOLIA_API_KEY="xxx"; pnpm index:algolia');
+  process.exit(1);
+}
 
 // 排除的文件
 const excludedFiles = ['index.md', 'tags.md', 'archives.md', 'me.md'];
@@ -53,14 +105,17 @@ function extractCategoryFromPath(filePath) {
  * 清理文本内容（移除 markdown 语法）
  */
 function cleanContent(text) {
-  return text
+  const cleaned = text
     .replace(/```[\s\S]*?```/g, '') // 移除代码块
     .replace(/`[^`]+`/g, '') // 移除行内代码
     .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1') // 移除链接，保留文本
     .replace(/[#*_~`]/g, '') // 移除 markdown 标记
     .replace(/\n+/g, ' ') // 换行符替换为空格
     .trim()
-    .substring(0, 5000); // 限制长度
+    .substring(0, 8000); // 先按字符粗截断，避免超大输入
+
+  // 再按字节精确截断（中文 UTF-8 会放大字节数）
+  return truncateUtf8(cleaned, 7000);
 }
 
 /**
@@ -95,7 +150,7 @@ async function getMarkdownFiles() {
       const cleanedContent = cleanContent(body);
       
       // 主记录（整个页面）- 这是最重要的记录
-      const mainRecord = {
+      const mainRecord = ensureAlgoliaRecordSize({
         objectID: relativePath,
         hierarchy: {
           lvl0: category || '文档',
@@ -109,7 +164,7 @@ async function getMarkdownFiles() {
         tags: frontmatter.tags || [],
         date: frontmatter.date || '',
         lang: 'zh-CN', // VitePress 需要的语言字段（必须与 VitePress 配置的 locale 匹配）
-      };
+      });
       allRecords.push(mainRecord);
       
       // 为每个 H2 和 H3 标题创建子记录（用于更精确的搜索）
@@ -152,7 +207,7 @@ async function getMarkdownFiles() {
             hierarchy.lvl3 = heading.text;
           }
 
-          allRecords.push({
+          allRecords.push(ensureAlgoliaRecordSize({
             objectID: `${relativePath}-${index}`,
             hierarchy: hierarchy,
             content: sectionCleanedContent,
@@ -161,7 +216,7 @@ async function getMarkdownFiles() {
             type: 'content',
             title: heading.text,
             lang: 'zh-CN', // VitePress 需要的语言字段（必须与 VitePress 配置的 locale 匹配）
-          });
+          }));
         });
     });
 
