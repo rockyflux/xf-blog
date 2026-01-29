@@ -8,6 +8,23 @@ import fg from 'fast-glob';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// 尝试从项目根目录加载 .env 文件（如果存在），用于本地开发
+const envPath = path.join(__dirname, '..', '.env');
+if (fs.existsSync(envPath)) {
+  const envContent = fs.readFileSync(envPath, 'utf-8');
+  envContent.split('\n').forEach((line) => {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) return;
+    const eqIndex = trimmed.indexOf('=');
+    if (eqIndex === -1) return;
+    const key = trimmed.slice(0, eqIndex).trim();
+    const value = trimmed.slice(eqIndex + 1).trim();
+    if (key && !(key in process.env)) {
+      process.env[key] = value;
+    }
+  });
+}
+
 /**
  * 将字符串按 UTF-8 字节数截断（避免 Algolia 单条 record 10KB 限制）
  */
@@ -53,10 +70,10 @@ function ensureAlgoliaRecordSize(record, maxRecordBytes = 9500) {
 }
 
 // Algolia 配置
-const ALGOLIA_APP_ID = process.env.ALGOLIA_APP_ID || 'JF17SJJSHZ';
+const ALGOLIA_APP_ID = process.env.ALGOLIA_APP_ID;
 // 管理 API Key（用于写入），请通过环境变量注入，避免把密钥提交到仓库
 const ALGOLIA_API_KEY = process.env.ALGOLIA_API_KEY;
-const ALGOLIA_INDEX_NAME = process.env.ALGOLIA_INDEX_NAME || 'xfblog';
+const ALGOLIA_INDEX_NAME = process.env.ALGOLIA_INDEX_NAME;
 
 if (!ALGOLIA_API_KEY) {
   console.error('❌ 缺少环境变量 ALGOLIA_API_KEY（Algolia 管理 API Key，用于写入索引）');

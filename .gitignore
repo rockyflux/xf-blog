@@ -27,3 +27,9 @@ cache/
 /src/node/shared.ts
 pnpm-global
 TODOs.md
+.env
+.env.local
+.env.example
+.env.*.local
+.spec-workflow
+.claude
